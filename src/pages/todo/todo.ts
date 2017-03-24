@@ -1,26 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TodoPage } from '../todo/todo';
 
 /*
-  Generated class for the Register page.
+  Generated class for the Todo page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html'
+  selector: 'page-todo',
+  templateUrl: 'todo.html'
 })
-export class RegisterPage {
+export class TodoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
+    console.log('ionViewDidLoad TodoPage');
   }
 
-   newpage(){
-    this.navCtrl.push(TodoPage);
-  }
 }
